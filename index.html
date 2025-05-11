@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAVCY CHILD CARE</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/F_image 1.png">
+</head>
+<body>
+    <header>
+        <h1>FAVCY Child Care</h1>
+        <p>Empowering Children, Building Futures</p>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <a href="about.html"><img src="./Images/F_image 1.png" alt="FAVCY Logo"></a>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1596464716121-2b6b11c9fe30?auto=format&fit=crop&w=1280&q=80" class="active" alt="Children playing">
+            <div class="caption">Children playing in a safe environment</div>
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1596461404969-b57d7ceecd4d?auto=format&fit=crop&w=1280&q=80" alt="Child education">
+            <div class="caption">Empowering children through education</div>
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1280&q=80" alt="Community support">
+            <div class="caption">Building strong communities for kids</div>
+        </div>
+    </div>
+
+    <section class="cards" id="home">
+        <div class="card">
+            <h2>Education</h2>
+            <p>We provide learning resources and classes for children in need.</p>
+        </div>
+        <div class="card">
+            <h2>Nutrition</h2>
+            <p>Healthy meals and nutrition plans are key to child development.</p>
+        </div>
+        <div class="card">
+            <h2>Support</h2>
+            <p>Our volunteers and staff offer emotional and community support.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>FAVCY Child Care is a non-profit organization dedicated to the welfare of underprivileged children. Our mission is to provide holistic care including education, health, and emotional support, helping children to thrive and reach their full potential.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Free tutoring and after-school programs</li>
+            <li>Nutrition and wellness support</li>
+            <li>Safe recreational activities</li>
+            <li>Family and counseling support</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@favcychildcare.org</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Location: 123 Hope Street, Caretown</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FAVCY Child Care. All rights reserved.</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </footer>
+
+
+
+    <script>
+        // Image transition
+        const images = document.querySelectorAll('.jumbotron img');
+        let current = 0;
+
+        setInterval(() => {
+            images[current].classList.remove('active');
+            current = (current + 1) % images.length;
+            images[current].classList.add('active');
+        }, 3000);
+
+        // Slide-in cards on load
+        window.addEventListener('load', () => {
+            document.querySelector('.cards').classList.add('visible');
+        });
+
+        const slides = document.querySelectorAll('.jumbotron .slide');
+        let currentSlide = 0;
+
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 3000);
+    </script>
+</body>
+</html>
