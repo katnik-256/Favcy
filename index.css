@@ -1,52 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-header {
-    background: #f4a261;
-    padding: 1em 0;
-    text-align: center;
-    color: white;
-}
-.logo {
-    margin-right: auto;
-}
-.logo img {
-    height: 40px;
-}
-nav {
-    background: #264653;
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    padding: 1em;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
 
-.cards {
-    display: flex;
-    justify-content: space-around;
-    margin: 2em 0;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 1s ease;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
-.card {
-    background: #e9c46a;
-    padding: 2em;
-    width: 30%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-} .jumbotron {
+.navbar-custom {
+    background-color: #264653;
+}
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: white;
+}
+.jumbotron {
     position: relative;
     overflow: hidden;
     height: 400px;
@@ -76,20 +41,17 @@ nav a {
     border-radius: 5px;
     font-size: 1.2em;
 }
-.cards.visible {
-    opacity: 1;
-    transform: translateY(0);
+.card {
+    margin-bottom: 2rem;
 }
 footer {
-    background: #2a9d8f;
+    background: #264653;
     color: white;
-    padding: 2em 0;
+    padding: 1rem;
     text-align: center;
 }
 footer nav a {
     color: white;
     margin: 0 1em;
-}
-section {
-    padding: 2em;
+    text-decoration: none;
 }

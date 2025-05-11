@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAVCY CHILD CARE</title>
+    <title>FAVCY Child Care</title>
+    <link rel="icon" href="./Images/F_image 1.png" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./Images/F_image 1.png">
+
 </head>
 <body>
-    <header>
-        <h1>FAVCY Child Care</h1>
-        <p>Empowering Children, Building Futures</p>
+    <header class="bg-light text-center p-4">
+        <h1 class="display-4">FAVCY Child Care</h1>
+        <p class="lead">Empowering Children, Building Futures</p>
     </header>
 
-    <nav>
-        <div class="logo">
-            <a href="about.html"><img src="./Images/F_image 1.png" alt="FAVCY Logo"></a>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="logo.png" alt="FAVCY Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact Us</a>
     </nav>
 
     <div class="jumbotron">
-        <div class="slide">
-            <img src="https://images.unsplash.com/photo-1596464716121-2b6b11c9fe30?auto=format&fit=crop&w=1280&q=80" class="active" alt="Children playing">
+        <div class="slide active">
+            <img src="https://images.unsplash.com/photo-1596464716121-2b6b11c9fe30?auto=format&fit=crop&w=1280&q=80" alt="Children playing">
             <div class="caption">Children playing in a safe environment</div>
         </div>
         <div class="slide">
@@ -38,71 +50,70 @@
         </div>
     </div>
 
-    <section class="cards" id="home">
-        <div class="card">
-            <h2>Education</h2>
-            <p>We provide learning resources and classes for children in need.</p>
-        </div>
-        <div class="card">
-            <h2>Nutrition</h2>
-            <p>Healthy meals and nutrition plans are key to child development.</p>
-        </div>
-        <div class="card">
-            <h2>Support</h2>
-            <p>Our volunteers and staff offer emotional and community support.</p>
+    <section class="container my-5" id="home">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Education</h5>
+                        <p class="card-text">We provide learning resources and classes for children in need.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Nutrition</h5>
+                        <p class="card-text">Healthy meals and nutrition plans are key to child development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Support</h5>
+                        <p class="card-text">Our volunteers and staff offer emotional and community support.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="about">
-        <h2>About Us</h2>
+    <section class="container my-5" id="about">
+        <h2 class="mb-4">About Us</h2>
         <p>FAVCY Child Care is a non-profit organization dedicated to the welfare of underprivileged children. Our mission is to provide holistic care including education, health, and emotional support, helping children to thrive and reach their full potential.</p>
     </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Free tutoring and after-school programs</li>
-            <li>Nutrition and wellness support</li>
-            <li>Safe recreational activities</li>
-            <li>Family and counseling support</li>
+    <section class="container my-5" id="services">
+        <h2 class="mb-4">Our Services</h2>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Free tutoring and after-school programs</li>
+            <li class="list-group-item">Nutrition and wellness support</li>
+            <li class="list-group-item">Safe recreational activities</li>
+            <li class="list-group-item">Family and counseling support</li>
         </ul>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@favcychildcare.org</p>
-        <p>Phone: +123 456 7890</p>
-        <p>Location: 123 Hope Street, Caretown</p>
+    <section class="container my-5" id="contact">
+        <h2 class="mb-4">Contact Us</h2>
+        <p><strong>Email:</strong> info@favcychildcare.org</p>
+        <p><strong>Phone:</strong> +123 456 7890</p>
+        <p><strong>Location:</strong> 123 Hope Street, Caretown</p>
     </section>
 
-    <footer>
-        <p>&copy; 2025 FAVCY Child Care. All rights reserved.</p>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <footer class="mt-5">
+        <div class="container">
+            <p class="mb-2">&copy; 2025 FAVCY Child Care. All rights reserved.</p>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </footer>
 
-
-
     <script>
-        // Image transition
-        const images = document.querySelectorAll('.jumbotron img');
-        let current = 0;
-
-        setInterval(() => {
-            images[current].classList.remove('active');
-            current = (current + 1) % images.length;
-            images[current].classList.add('active');
-        }, 3000);
-
-        // Slide-in cards on load
-        window.addEventListener('load', () => {
-            document.querySelector('.cards').classList.add('visible');
-        });
-
         const slides = document.querySelectorAll('.jumbotron .slide');
         let currentSlide = 0;
 
@@ -112,5 +123,6 @@
             slides[currentSlide].classList.add('active');
         }, 3000);
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
