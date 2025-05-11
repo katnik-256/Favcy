@@ -3,126 +3,473 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAVCY Child Care</title>
+    <title>FAVCY CHILD CARE - Empowering Children's Futures</title>
     <link rel="icon" href="./Images/F_image 1.png" type="image/png">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-
 </head>
 <body>
-    <header class="bg-light text-center p-4">
-        <h1 class="display-4">FAVCY Child Care</h1>
-        <p class="lead">Empowering Children, Building Futures</p>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="./Images/F_image 1.png" alt="FAVCY CHILD CARE Logo">
+                <h1>FAVCY <span>CHILD CARE</span></h1>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-custom">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Empowering Children's Futures</h1>
+            <p>FAVCY CHILD CARE is dedicated to providing education, healthcare, and protection to underprivileged children across the country. Join us in our mission to create a better tomorrow.</p>
+            <div class="hero-btns">
+                <a href="#donate" class="btn">Donate Now</a>
+                <a href="#programs" class="btn btn-secondary">Our Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
         <div class="container">
-            <a class="navbar-brand" href="#home">
-                <img src="logo.png" alt="FAVCY Logo" height="40">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="jumbotron">
-        <div class="slide active">
-            <img src="https://images.unsplash.com/photo-1596464716121-2b6b11c9fe30?auto=format&fit=crop&w=1280&q=80" alt="Children playing">
-            <div class="caption">Children playing in a safe environment</div>
-        </div>
-        <div class="slide">
-            <img src="https://images.unsplash.com/photo-1596461404969-b57d7ceecd4d?auto=format&fit=crop&w=1280&q=80" alt="Child education">
-            <div class="caption">Empowering children through education</div>
-        </div>
-        <div class="slide">
-            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1280&q=80" alt="Community support">
-            <div class="caption">Building strong communities for kids</div>
-        </div>
-    </div>
-
-    <section class="container my-5" id="home">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Education</h5>
-                        <p class="card-text">We provide learning resources and classes for children in need.</p>
-                    </div>
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Children learning">
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Nutrition</h5>
-                        <p class="card-text">Healthy meals and nutrition plans are key to child development.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Support</h5>
-                        <p class="card-text">Our volunteers and staff offer emotional and community support.</p>
-                    </div>
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2024, FAVCY CHILD CARE began as a small initiative to provide education to street children in Mumbai. Today, we operate in 12 states across India, reaching over 50,000 children annually.</p>
+                    <p>Our mission is to ensure that every child, regardless of their background, has access to quality education, healthcare, and a safe environment to grow and thrive.</p>
+                    <p>We believe that investing in children is the most effective way to break the cycle of poverty and create lasting change in communities.</p>
+                    <a href="#" class="btn">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container my-5" id="about">
-        <h2 class="mb-4">About Us</h2>
-        <p>FAVCY Child Care is a non-profit organization dedicated to the welfare of underprivileged children. Our mission is to provide holistic care including education, health, and emotional support, helping children to thrive and reach their full potential.</p>
-    </section>
-
-    <section class="container my-5" id="services">
-        <h2 class="mb-4">Our Services</h2>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Free tutoring and after-school programs</li>
-            <li class="list-group-item">Nutrition and wellness support</li>
-            <li class="list-group-item">Safe recreational activities</li>
-            <li class="list-group-item">Family and counseling support</li>
-        </ul>
-    </section>
-
-    <section class="container my-5" id="contact">
-        <h2 class="mb-4">Contact Us</h2>
-        <p><strong>Email:</strong> info@favcychildcare.org</p>
-        <p><strong>Phone:</strong> +123 456 7890</p>
-        <p><strong>Location:</strong> 123 Hope Street, Caretown</p>
-    </section>
-
-    <footer class="mt-5">
+    <!-- Programs Section -->
+    <section class="programs section-padding" id="programs">
         <div class="container">
-            <p class="mb-2">&copy; 2025 FAVCY Child Care. All rights reserved.</p>
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-            </nav>
+            <h2 class="section-title">Our Programs</h2>
+            <p class="text-center">We run various programs designed to address the holistic needs of children in underserved communities.</p>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Education Program">
+                    </div>
+                    <div class="program-content">
+                        <h3>Education for All</h3>
+                        <p>Our flagship program provides access to quality education through community schools, after-school programs, and digital learning initiatives.</p>
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Healthcare Program">
+                    </div>
+                    <div class="program-content">
+                        <h3>Health & Nutrition</h3>
+                        <p>We operate mobile health clinics and nutrition programs to ensure children receive proper medical care and balanced meals for healthy development.</p>
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Child Protection Program">
+                    </div>
+                    <div class="program-content">
+                        <h3>Child Protection</h3>
+                        <p>Our child protection units work to prevent abuse, trafficking, and child labor while providing safe spaces and counseling for at-risk children.</p>
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact section-padding" id="impact">
+        <div class="container">
+            <h2 class="section-title">Our Impact</h2>
+            <p class="text-center">Together with our supporters, we've made a real difference in children's lives.</p>
+            
+            <div class="impact-stats">
+                <div class="stat-item">
+                    <div class="stat-number">50,000+</div>
+                    <div class="stat-text">Children Reached Annually</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">120</div>
+                    <div class="stat-text">Community Schools Established</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">5,000+</div>
+                    <div class="stat-text">Health Checkups Conducted</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-text">States Across India</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section class="donate section-padding" id="donate">
+        <div class="container">
+            <h2 class="section-title">Make a Difference</h2>
+            <p class="text-center">Your support can transform a child's life. Choose how you'd like to contribute.</p>
+            
+            <div class="donate-options">
+                <div class="donate-option">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>One-Time Donation</h3>
+                    <p>Make a single donation to support our programs and initiatives.</p>
+                    <a href="#" class="btn">Donate Now</a>
+                </div>
+                
+                <div class="donate-option">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Monthly Giving</h3>
+                    <p>Become a monthly donor and provide sustained support for children.</p>
+                    <a href="#" class="btn">Start Giving</a>
+                </div>
+                
+                <div class="donate-option">
+                    <i class="fas fa-gift"></i>
+                    <h3>Sponsor a Child</h3>
+                    <p>Sponsor a child's education, healthcare, and nutrition needs.</p>
+                    <a href="#" class="btn">Sponsor Now</a>
+                </div>
+                
+                <div class="donate-option">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Fundraise</h3>
+                    <p>Start your own fundraiser to support our cause.</p>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <h2 class="section-title">What People Say</h2>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p class="testimonial-text">"FAVCY CHILD CARE transformed my daughter's life. She went from working in a factory to attending school regularly, and now she dreams of becoming a doctor. We're forever grateful."</p>
+                    <p class="testimonial-author">Rahul Sharma</p>
+                    <p class="testimonial-role">Parent</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"As a volunteer, I've seen firsthand the incredible work FAVCY does. Their dedication to each child's wellbeing is truly inspiring."</p>
+                    <p class="testimonial-author">Priya Patel</p>
+                    <p class="testimonial-role">Volunteer</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"Our company has partnered with FAVCY CHILD CARE for 5 years, and we've seen the measurable impact of their programs. They're making real change."</p>
+                    <p class="testimonial-author">Amit Joshi</p>
+                    <p class="testimonial-role">Corporate Partner</p>
+                </div>
+                
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active" data-slide="0"></div>
+                    <div class="testimonial-dot" data-slide="1"></div>
+                    <div class="testimonial-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding">
+        <div class="container">
+            <h2 class="section-title">Moments of Joy</h2>
+            <p class="text-center">Capturing the smiles we help create</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1575425186775-b8de9a427e67?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Happy children">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542816417-0983675098c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Classroom">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&auto=format&fit=crop&w=650&q=80" alt="Health checkup">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Learning">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542816417-0983675098c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Play time">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&auto=format&fit=crop&w=650&q=80" alt="Graduation">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="text-center">We'd love to hear from you. Reach out for partnerships, volunteering, or any questions.</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>Kawempe, Kampala</p>
+                                <p>Kawempe, Kampala</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>+256 740 391669</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@favcychildcare.org</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>FAVCY CHILD CARE is a non-profit organization dedicated to improving the lives of underprivileged children through education, healthcare, and protection.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Programs</h3>
+                    <ul>
+                        <li><a href="#">Education for All</a></li>
+                        <li><a href="#">Health & Nutrition</a></li>
+                        <li><a href="#">Child Protection</a></li>
+                        <li><a href="#">Vocational Training</a></li>
+                        <li><a href="#">Economic Empowerment</a></li>
+                        <li><a href="#">Counselling</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter to stay updated on our work and how you can help.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 FAVCY CHILD CARE. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        const slides = document.querySelectorAll('.jumbotron .slide');
-        let currentSlide = 0;
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            mobileMenuBtn.innerHTML = mainNav.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (mainNav.classList.contains('active')) {
+                        mainNav.classList.remove('active');
+                        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                }
+            });
+        });
+        
+        // Testimonial Slider
+        const testimonials = document.querySelectorAll('.testimonial');
+        const dots = document.querySelectorAll('.testimonial-dot');
+        let currentTestimonial = 0;
+        
+        function showTestimonial(index) {
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            testimonials[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentTestimonial = index;
+        }
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showTestimonial(index));
+        });
+        
+        // Auto-rotate testimonials
         setInterval(() => {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }, 3000);
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+        
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('active');
+            } else {
+                backToTopBtn.classList.remove('active');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to a server
+            // For this example, we'll just show an alert
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
+        });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
